@@ -15,5 +15,13 @@
 
 
 function gimme (triplet) {
+    let sortedArr = [...triplet].sort((a,b)=>a-b)
+    let num = sortedArr[1]
+    let index = triplet.indexOf(num)
+    return index
+    }
 
-}
+
+    function gimme (triplet) {
+        return triplet.indexOf([...triplet].sort((a,b)=>a-b)[1])
+      }
